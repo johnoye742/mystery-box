@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+body {
+    background-color: #623412;
+    font-family: Ubuntu;
+}
+
+main #box {
+   /* animation-name: box-anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    */
+    width: 10em;
+    height: 10em;
+    scale: 0.9;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#hearts {
+    top: -4em;
+    display: none;
+}
+
+#msg-box {
+    background: url(../images/wallpaperflare.com_wallpaper.jpg) #6B4226;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 70%;
+    scale: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #msg-box {
+        width: 95%;
+        height: 95%;
+        background-position: center;
+    }
+}
+
+@keyframes heart-anim {
+    
+}
+
+@keyframes box-anim {
+    0% {
+        scale: 0.9;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
